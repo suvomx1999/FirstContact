@@ -27,7 +27,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); // Body parser for JSON
 
 // Serve static files
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Sanitize data
 // app.use(mongoSanitize()); // Disabled due to compatibility issue with latest Express/Mongoose versions in this environment
